@@ -1,0 +1,44 @@
+@use '../abstracts/mixins' as mix;
+@use '../components/buttons' as *;
+@use '../abstracts/variables' as var;
+
+.header__principal{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    margin-bottom: 70px;
+
+    &-logo{
+        width: 90%;
+        &:active{
+            transform: scale(0.99);
+        }
+    }
+
+    &-enlaces{
+        margin-right: 50px;
+
+        ul{
+            display: flex;
+            gap: 40px;
+            @include mix.reset_list();
+
+            li{
+                padding: 0px;
+
+                a{
+                    text-decoration: none;
+                    color:var.$grey;
+                    padding: 5px 0px;
+
+                    &:hover{
+                        color: var.$white;
+                        border-bottom: 2px solid var.$pink;
+                    }
+                }
+            }
+        }
+    } 
+}

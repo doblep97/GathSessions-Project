@@ -1,0 +1,9 @@
+@use '../abstracts/mixins' as mix;
+
+//Me aseguro que todo elemento que tenga la clase container tenga un espacio de seguradidad de 16px
+
+.container{
+    padding-left: 50px;
+    padding-right: 50px;
+
+}

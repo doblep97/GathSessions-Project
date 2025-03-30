@@ -1,0 +1,23 @@
+@use '../base/typography' as font;
+
+//Medidas responsive
+
+$bp-tablet: 768px;
+$bp-tablet-horizontal: 1024px;
+$bp-desktop: 1200px;
+$bp-desktop-xl: 1440px;
+
+//Fuentes
+
+$font_primary:font.$poppins;
+$font_secondary:font.$merriweather;
+
+
+
+//Colores
+
+$blue:#2B2D38;
+$black:#13183F;
+$grey:#46484f;
+$pink:#DB2A6B;
+$white:#ffffff;

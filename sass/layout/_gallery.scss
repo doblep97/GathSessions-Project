@@ -1,0 +1,42 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "img1 img3 ."
+                         "img1 img3 img5"
+                         "img1 img4 img5"
+                         "img1 img4 img5"
+                         "img2 img4 img5"
+                         "img2 img4 .";
+    gap:30px;
+
+    &_img-1{
+        grid-area: img1;
+        background-color: #6E2FE9;
+        border-radius: 70px;
+    }
+    &_img-2{
+        grid-area: img2;
+        background-color: var.$pink;
+        border-radius: 70px;
+    }
+    &_img-3{
+        grid-area: img3;
+        background-color: #65D3D8;
+        border-radius: 70px;
+    }
+    &_img-4{
+        grid-area: img4;
+        background-color: #FD7E37;
+        border-radius: 70px;
+
+    }
+    &_img-5{
+        grid-area: img5;
+        background-color: #F3B74C;
+        border-radius: 70px;
+    }
+
+}
